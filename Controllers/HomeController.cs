@@ -43,7 +43,7 @@ namespace WebApp_OpenIDConnect_DotNet.Controllers
 
         private static async Task<string> CreateBlob(TokenAcquisitionTokenCredential tokenCredential)
         {
-            Uri blobUri = new Uri("https://gz204storageacct.blob.core.windows.net/gzstoragecontainer/Blob1.txt");
+            Uri blobUri = new Uri("https://gz204astrgacct.blob.core.windows.net/strgcontainer/Blob1.txt");
             BlobClient blobClient = new BlobClient(blobUri, tokenCredential);
 
             string blobContents = "Blob created by Azure AD authenticated user.";
